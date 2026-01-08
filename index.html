@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Animation</title>
+</head>
+<body>
+  <div class="controls">
+    <button class="control-btn" onclick="toggleAnimation()">⏸️ Pausa</button>
+    <button class="control-btn" onclick="resetPosition()">🔄 Reset</button>
+    <button class="control-btn" onclick="changeDirection()">
+      ↔️ Direzione
+    </button>
+  </div>
+
+  <div class="speed-indicator">
+    Velocità: <span id="speedValue">120</span> px/s
+  </div>
+
+  <div class="container">
+    <canvas id="particleCanvas"></canvas>
+    <canvas id="scannerCanvas"></canvas>
+
+    <div class="scanner"></div>
+
+    <div class="card-stream" id="cardStream">
+      <div class="card-line" id="cardLine"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+
+  <div class="inspiration-credit">
+    Ispirato da
+    <a href="https://evervault.com/" target="_blank">@evervault.com</a>
+  </div>
+
+  <div id="start-screen">
+        <button id="start-btn">Entra nel sito</button>
+      </div>
+      
+</body>
+</html>
